@@ -1,0 +1,175 @@
+
+@font-face {
+    font-family: 'hs';
+    src: url(../font/LTSaeada-Medium.otf);
+}
+
+@font-face {
+    font-family: 'p';
+    src: url(../font/Louis\ George\ Cafe.ttf);
+}
+
+@keyframes t-l-b {
+    from{
+        transform: translateY(-400px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes t-b-l {
+    from{
+        transform: translateY(800px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes t-l-0{
+    from{
+        transform: translateX(400px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes t-r-0 {
+    from{
+        transform: translateX(-400px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
+#t-l-b{
+    animation: t-l-b 1s ease-in;
+}
+
+#t-b-l{
+    animation: t-b-l 1s ease-in;
+}
+
+#t-l-0{
+    animation: t-l-0 0.8s 0.7s ease-in-out;
+}
+
+#t-r-0{
+    animation: t-r-0 0.8s 0.7s ease-in-out;
+}
+
+:root{
+    --bckg-clr: #FDFBFB;
+    --details-1: #EEB4B1;
+    --details-2: #E9CBCA;
+    --details-3: #ffe4c4;
+    --text : #090000;
+    --sub-text: #A09D9D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--bckg-clr);
+    margin: 0;
+    padding: 0;
+}
+
+.top-tr-fine{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--details-1);
+    color: var(--text);
+}
+
+h1.store-name{
+    font-family: "hs";
+    color: var(--details-3);
+    padding: 50px 0px 20px 10px;
+    font-size: 45px;
+}
+
+nav.nav-bar{
+    justify-content: center;
+}
+
+.search-view{
+    list-style: none;
+}
+
+.src{
+    text-decoration: none;
+    color: var(--details-3);
+}
+
+.page{
+    font-family: "p";
+    font-size: 22px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.page:hover{
+    color: var(--sub-text);
+    transform: scale(1.02);
+    transition: all 0.8s;
+}
+
+.texts-absolute{
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texts-absolute h1{
+    font-family: 'hs';
+    font-size: 50px;
+}
+
+.texts-absolute p{
+    font-family: "p";
+    text-align: center;
+    font-size: 42px;
+}
+
+.image-divulgation{
+    color: var(--details-1);
+    background-image: url(../image/bckg-cll.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+h2.wlcm-to-site{
+    font-family: "hs";
+    font-size: 35px;
+    margin: auto;
+    text-align: center;
+    color: var(--details-1);
+}
+
+p.enter-introduce{ 
+    width: 390px;
+    font-family: "p";
+    color: var(--details-2);
+    font-size: 2.3rem;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
