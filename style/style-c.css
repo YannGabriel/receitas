@@ -245,11 +245,51 @@
     main.pc{
         z-index: 0;
         position: absolute;
-        top: 140%;
+        top: 90%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 1200px;
         margin: auto;
         background-color: var(--bckg-clr);
     }
+
+    h2.contact-view{
+        padding-top: 500px;
+        color: var(--details-1);
+        font-size: 2.3rem;
+        margin: auto;
+        text-align: center;
+        font-family: "hs";
+    }
+
+    p.about-ctt{
+        color: var(--details-2);
+        font-family: "p";
+        font-size: 2.0rem;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 6%;
+    }
+
+    div.ctts{
+        display: block;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .icon{
+        margin-left: 25%;
+        width: 100px;
+        height: 100px;
+    }
+
+    h3{
+        margin-bottom: 30px;
+        margin-left: 5%;
+        font-size: 2rem;
+        color: var(--details-2);
+        display: inline-block;
+        font-family: "p";
+    }
+    
 }
