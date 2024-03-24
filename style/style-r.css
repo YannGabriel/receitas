@@ -1,0 +1,264 @@
+
+@font-face {
+    font-family: 'hs';
+    src: url(../font/LTSaeada-Medium.otf);
+}
+
+@font-face {
+    font-family: 'p';
+    src: url(../font/Louis\ George\ Cafe.ttf);
+}
+
+@keyframes t-l-b {
+    from{
+        transform: translateY(-400px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes t-b-l {
+    from{
+        transform: translateY(800px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes t-l-0{
+    from{
+        transform: translateX(400px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
+@keyframes t-r-0 {
+    from{
+        transform: translateX(-400px);
+    }
+
+    to{
+        transform: translate(0px);
+    }
+}
+
+#t-l-b{
+    animation: t-l-b 1s ease-in;
+}
+
+#t-b-l{
+    animation: t-b-l 1s ease-in;
+}
+
+#t-l-0{
+    animation: t-l-0 0.8s 0.7s ease-in-out;
+}
+
+#t-r-0{
+    animation: t-r-0 0.8s 0.7s ease-in-out;
+}
+
+:root{
+    --bckg-clr: #FDFBFB;
+    --details-1: #EEB4B1;
+    --details-2: #E9CBCA;
+    --details-3: #ffe4c4;
+    --text : #090000;
+    --sub-text: #A09D9D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@media(max-width : 728px) {
+    body{
+        overflow-x: hidden;
+        background-color: var(--bckg-clr);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top-tr-fine{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--details-3);
+        color: var(--text);
+    }
+    
+    h1.store-name{
+        font-family: "hs";
+        color: var(--details-1);
+        padding: 50px 0px 20px 10px;
+        font-size: 45px;
+    }
+    
+    nav.nav-bar{
+        justify-content: center;
+    }
+    
+    .search-view{
+        list-style: none;
+    }
+    
+    .src{
+        text-decoration: none;
+        color: var(--details-1);
+    }
+    
+    .page{
+        font-family: "p";
+        font-size: 22px;
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    .page:hover{
+        color: var(--sub-text);
+        transform: scale(1.02);
+        transition: all 0.8s;
+    }
+    
+    .image-divulgation{
+        color: var(--details-1);
+        background-image: url(../image/bckg-cll-about.png);
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+    }
+
+    h1.receita-chefe{
+        text-align: center;
+        padding-top: 200px;
+        font-family: 'hs';
+        font-size: 2.6rem;
+        color: var(--details-1);
+    }
+
+    h2.sub-name{
+        text-align: center;
+        font-size: 1.9rem;
+        font-family: "p";
+        color: var(--details-2);
+    }
+
+    p{
+        width: 390px;
+        text-align: center;
+        margin: auto;
+        color: var(--details-1);
+        font-size: 1.6rem;
+        font-family: "p";
+    }
+}
+
+
+@media (min-width: 1000px){
+    body{
+        background-image: url(../image/bckg-pc-about-m.png);
+        background-position: center ;
+    }
+
+    .image-divulgation{
+        position: absolute;
+        top: 20%;
+        z-index: 1;
+        background-image: url(../image/1711310500117.png);
+        margin: auto;
+        width: 100%;
+        height: 350px;
+    }
+    
+    .top-tr-fine{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--details-3);
+        color: var(--text);
+    }
+    
+    h1.store-name{
+        font-family: "hs";
+        color: var(--details-1);
+        padding: 50px 0px 20px 10px;
+        font-size: 45px;
+    }
+    
+    nav.nav-bar{
+        justify-content: center;
+    }
+    
+    .search-view{
+        list-style: none;
+    }
+    
+    .src{
+        text-decoration: none;
+        color: var(--details-1);
+    }
+    
+    .page{
+        font-family: "p";
+        font-size: 22px;
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    .page:hover{
+        color: var(--sub-text);
+        transform: scale(1.02);
+        transition: all 0.8s;
+    }
+
+    main.pc{
+        background-color: var(--bckg-clr);
+        width: 1200px;
+        margin: auto;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+
+    h1.receita-chefe{
+        text-align: center;
+        padding-top: 1000px;
+        font-family: 'hs';
+        font-size: 2.6rem;
+        color: var(--details-1);
+    }
+
+    h2.sub-name{
+        text-align: center;
+        font-size: 1.9rem;
+        font-family: "p";
+        color: var(--details-2);
+    }
+
+    p{
+        width: 390px;
+        text-align: center;
+        margin: auto;
+        color: var(--details-1);
+        font-size: 1.6rem;
+        font-family: "p";
+    }
+}
