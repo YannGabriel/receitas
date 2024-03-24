@@ -79,166 +79,350 @@
     padding: 0;
 }
 
-body{
-    overflow-x: hidden;
-    background-color: var(--bckg-clr);
-    margin: 0;
-    padding: 0;
+@media (max-width: 780px){
+    body{
+        overflow-x: hidden;
+        background-color: var(--bckg-clr);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top-tr-fine{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--details-1);
+        color: var(--text);
+    }
+    
+    h1.store-name{
+        font-family: "hs";
+        color: var(--details-3);
+        padding: 50px 0px 20px 10px;
+        font-size: 45px;
+    }
+    
+    nav.nav-bar{
+        justify-content: center;
+    }
+    
+    .search-view{
+        list-style: none;
+    }
+    
+    .src{
+        text-decoration: none;
+        color: var(--details-3);
+    }
+    
+    .page{
+        font-family: "p";
+        font-size: 22px;
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    .page:hover{
+        color: var(--sub-text);
+        transform: scale(1.02);
+        transition: all 0.8s;
+    }
+    
+    .texts-absolute{
+        text-align: center;
+        z-index: 1;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .texts-absolute h1{
+        color: var(--details-1);
+        font-family: 'hs';
+        font-size: 50px;
+    }
+    
+    .texts-absolute p{
+        color: var(--details-2);
+        font-family: "p";
+        text-align: center;
+        font-size: 42px;
+    }
+    
+    .image-divulgation{
+        color: var(--details-1);
+        background-image: url(../image/bckg-cll.png);
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+    
+    h2.wlcm-to-site{
+        font-family: "hs";
+        font-size: 35px;
+        margin: auto;
+        text-align: center;
+        color: var(--details-1);
+    }
+    
+    p.enter-introduce{ 
+        width: 390px;
+        font-family: "p";
+        color: var(--details-2);
+        font-size: 2.3rem;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    h3.poducts{
+        padding: 10px;
+        font-family: "hs";
+        font-size: 30px;
+        margin: auto;
+        text-align: center;
+        color: var(--details-1);
+    }
+    
+    h2.receita-nome{
+        color: var(--details-1);
+        font-family: "hs";
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .destaque-receitas{
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px var(--details-2);
+        text-align: center;
+        padding: 30px 0px 30px 0px;
+        margin: auto;
+        width: 90%;
+        border: solid 1px var(--details-1);
+    }
+    
+    h3.nome-da-receita{
+        font-family: "hs";
+        color: var(--details-2);
+        font-size: 26px;
+        padding: 10px;
+    }
+    
+    .destaque-receitas img.img-prato{
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        height: 40%;
+    }
+    
+    p.about-wish{
+        color: var(--details-2);
+        font-family: "p";
+        font-size: 20px;
+        padding: 8px;
+    }
+    
+    a.target{
+        border-radius: 10px;
+        color: var(--details-3);
+        background-color: var(--details-1);
+        font-family: "p";
+        font-size: 19px;
+        padding: 10px;
+        text-decoration: none;
+    }
+    p.ower-receitas{
+        width: 390px;
+        font-family: "p";
+        color: var(--details-2);
+        font-size: 1.8rem;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
 }
 
-.top-tr-fine{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: var(--details-1);
-    color: var(--text);
-}
+@media(min-width: 1000px){
+    body{
+        overflow-x: hidden;
+        background-image: url(../image/bckg-pc-about-m.png);
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top-tr-fine{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 1;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--details-1);
+        color: var(--text);
+    }
+    
+    h1.store-name{
+        font-family: "hs";
+        color: var(--details-3);
+        padding: 50px 0px 20px 10px;
+        font-size: 45px;
+    }
+    
+    nav.nav-bar{
+        justify-content: center;
+    }
+    
+    .search-view{
+        list-style: none;
+    }
+    
+    .src{
+        text-decoration: none;
+        color: var(--details-3);
+    }
+    
+    .page{
+        font-family: "p";
+        font-size: 22px;
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    .page:hover{
+        color: var(--sub-text);
+        transform: scale(1.02);
+        transition: all 0.8s;
+    }
+    
+    .texts-absolute h1{
+        text-align: center;
+        margin-top: 600px;
+        color: var(--details-1);
+        font-family: 'hs';
+        font-size: 50px;
+    }
+    
+    .texts-absolute p{
+        color: var(--details-2);
+        font-family: "p";
+        text-align: center;
+        font-size: 42px;
+    }
+    
+    .image-divulgation{
+        position: absolute;
+        top: 20%;
+        z-index: 1;
+        background-image: url(../image/bckg-pc-menu.png);
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+    }
+    
+    main.pc{
+        z-index: 0;
+        position: absolute;
+        top: 140%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 1200px;
+        margin: auto;
+        background-color: var(--bckg-clr);
+    }
 
-h1.store-name{
-    font-family: "hs";
-    color: var(--details-3);
-    padding: 50px 0px 20px 10px;
-    font-size: 45px;
-}
-
-nav.nav-bar{
-    justify-content: center;
-}
-
-.search-view{
-    list-style: none;
-}
-
-.src{
-    text-decoration: none;
-    color: var(--details-3);
-}
-
-.page{
-    font-family: "p";
-    font-size: 22px;
-    padding: 10px;
-    display: inline-block;
-}
-
-.page:hover{
-    color: var(--sub-text);
-    transform: scale(1.02);
-    transition: all 0.8s;
-}
-
-.texts-absolute{
-    text-align: center;
-    z-index: 1;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.texts-absolute h1{
-    font-family: 'hs';
-    font-size: 50px;
-}
-
-.texts-absolute p{
-    font-family: "p";
-    text-align: center;
-    font-size: 42px;
-}
-
-.image-divulgation{
-    color: var(--details-1);
-    background-image: url(../image/bckg-cll.png);
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-}
-
-h2.wlcm-to-site{
-    font-family: "hs";
-    font-size: 35px;
-    margin: auto;
-    text-align: center;
-    color: var(--details-1);
-}
-
-p.enter-introduce{ 
-    width: 390px;
-    font-family: "p";
-    color: var(--details-2);
-    font-size: 2.3rem;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-}
-
-h3.poducts{
-    padding: 10px;
-    font-family: "hs";
-    font-size: 30px;
-    margin: auto;
-    text-align: center;
-    color: var(--details-1);
-}
-
-h2.receita-nome{
-    color: var(--details-1);
-    font-family: "hs";
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-}
-
-.destaque-receitas{
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px var(--details-2);
-    text-align: center;
-    padding: 30px 0px 30px 0px;
-    margin: auto;
-    width: 90%;
-    border: solid 1px var(--details-1);
-}
-
-h3.nome-da-receita{
-    font-family: "hs";
-    color: var(--details-2);
-    font-size: 26px;
-    padding: 10px;
-}
-
-.destaque-receitas img.img-prato{
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 80%;
-    height: 40%;
-}
-
-p.about-wish{
-    color: var(--details-2);
-    font-family: "p";
-    font-size: 20px;
-    padding: 8px;
-}
-
-a.target{
-    border-radius: 10px;
-    color: var(--details-3);
-    background-color: var(--details-1);
-    font-family: "p";
-    font-size: 19px;
-    padding: 10px;
-    text-decoration: none;
-}
-p.ower-receitas{
-    width: 390px;
-    font-family: "p";
-    color: var(--details-2);
-    font-size: 1.8rem;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
+    h2.wlcm-to-site{
+        font-family: "hs";
+        font-size: 35px;
+        margin: auto;
+        text-align: center;
+        color: var(--details-1);
+    }
+    
+    p.enter-introduce{ 
+        width: 390px;
+        font-family: "p";
+        color: var(--details-2);
+        font-size: 2.3rem;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    h3.poducts{
+        padding: 10px;
+        font-family: "hs";
+        font-size: 30px;
+        margin: auto;
+        text-align: center;
+        color: var(--details-1);
+    }
+    
+    h2.receita-nome{
+        color: var(--details-1);
+        font-family: "hs";
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .destaque-receitas{
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px var(--details-2);
+        text-align: center;
+        padding: 30px 0px 30px 0px;
+        margin: auto;
+        width: 30%;
+        border: solid 1px var(--details-1);
+    }
+    
+    h3.nome-da-receita{
+        font-family: "hs";
+        color: var(--details-2);
+        font-size: 26px;
+        padding: 10px;
+    }
+    
+    .destaque-receitas img.img-prato{
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+        height: 40%;
+    }
+    
+    p.about-wish{
+        color: var(--details-2);
+        font-family: "p";
+        font-size: 20px;
+        padding: 8px;
+    }
+    
+    a.target{
+        border-radius: 10px;
+        color: var(--details-3);
+        background-color: var(--details-1);
+        font-family: "p";
+        font-size: 19px;
+        padding: 10px;
+        text-decoration: none;
+    }
+    p.ower-receitas{
+        width: 390px;
+        font-family: "p";
+        color: var(--details-2);
+        font-size: 1.8rem;
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+    }
 }
