@@ -305,7 +305,7 @@
     
     .texts-absolute h1{
         text-align: center;
-        margin-top: 600px;
+        margin-top: 850px;
         color: var(--details-1);
         font-family: 'hs';
         font-size: 50px;
@@ -415,6 +415,14 @@
         font-size: 19px;
         padding: 10px;
         text-decoration: none;
+    }
+
+    a.target:hover{
+        transform: scale(1.01);
+        transition: all 0.7s;
+        color: var(--details-1);
+        background-color: var(--details-3);
+        box-shadow: 0px 0px 20px var(--details-2);
     }
     p.ower-receitas{
         width: 390px;
